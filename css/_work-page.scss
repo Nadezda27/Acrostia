@@ -1,0 +1,9 @@
+.work-page {
+    background-image: url(../img/work-theme.png);
+    .top-menu-item {
+        &:hover {
+            background: #a1ca6c;
+        }
+    }
+}
+

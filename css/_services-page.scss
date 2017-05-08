@@ -1,0 +1,62 @@
+.services-page {
+    background-image: url(../img/services-theme.png);
+    padding-bottom: 124px;
+    .top-menu-item {
+        &:hover {
+            background: #df5c64;
+        }
+    }
+    h2 {
+        margin-bottom: 22px;
+    }
+    p {
+        color: #ffcccf;
+        padding-bottom: 43px;
+        &.main-description {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+h2 .pink-text {
+    color: #ec9da2;
+}
+
+.service-item {
+    padding-top: 27px;
+    .service-item-content {
+        border-radius: 5px;
+        background-color: rgba(200, 83, 90, .8);
+        padding: 44px 25px 0;
+        .service-item-logo-link {
+            display: block;
+            margin: 0 auto 29px;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            .fa {
+                margin-top: 5px;
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                background: #fff;
+                font-size: 64px;
+                color: #c8535a;
+                line-height: 120px;
+                vertical-align: middle;
+            }
+        }
+        .service-item-heading-link {
+            display: block;
+            font-size: 30px;
+            font-weight: 300;
+            line-height: 58px;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+        }
+        p {
+            color: #fefefe;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.contacts-page {
+    background-image: url(../img/contacts-theme.png);
+    .top-menu-item {
+        &:hover {
+            background: #82c8bd;
+        }
+    }
+}
+

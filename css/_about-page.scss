@@ -1,0 +1,67 @@
+.about-page {
+    background-image: url(../img/about-theme.png);
+    .top-menu-item {
+        &:hover {
+            background: #91778e;
+        }
+    }
+    p {
+        color: #e6d1e3;
+        margin-top: 24px;
+    }
+}
+
+.meet-the-team {
+    display: inline-block;
+    margin: 50px auto;
+    height: 65px;
+    border-radius: 5px;
+    background-color: #a1ca6c;
+    padding: 0 42px;
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 65px;
+    text-transform: uppercase;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        right: calc(50% - 15px);
+        top: 65px;
+        width: 0;
+        height: 0;
+        border-top: 15px solid #a1ca6c;
+        border-right: 15px solid transparent;
+        border-left: 15px solid transparent;
+    }
+}
+
+.team-item {
+    padding-top: 20px;
+    .team-item-content {
+        padding-top: 43px;
+        border-radius: 5px;
+        background-color: rgba(77, 63, 75, .5);
+        transition: background-color 0.4s;
+        &:hover {
+            background-color: rgba(77, 63, 75, .8);
+        }
+        .team-item-logo-link {
+            opacity: 1;
+            display: block;
+            margin: 0 auto;
+            width: 164px;
+            height: 164px;
+            border: 5px solid #a1859e;
+            border-radius: 50%;
+            background-color: #ffffff;
+            margin-bottom: 26px;
+        }
+        .team-item-heading-link {
+            font-size: 25px;
+            font-weight: 900;
+            line-height: 58px;
+            text-transform: uppercase;
+        }
+    }
+}

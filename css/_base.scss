@@ -1,0 +1,82 @@
+body {
+  min-height: 100vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover; 
+}
+
+.container {
+    min-height: 100vh;
+    position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+header {
+    height: 72px;
+    margin-bottom: 30px;
+    .site-logo {
+        font-size: 50px;
+        font-family: 'Damion', cursive;
+        display: block;
+        padding-top: 14px;
+    }
+}
+.top-menu-bar {
+    @include clear-after;
+    .top-menu-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        float: right;
+        @include clear-after;
+        .top-menu-item {
+            transition: background .3s;
+            float: left;
+            width: 93px;
+            height: 72px;
+            margin-left: 15px;
+            border-radius: 0 0 4px 4px;
+            padding-top: 43px;
+            @include clear-after;
+            .top-menu-link {
+                display: block;
+                color: #fff;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.hamburger {
+    .hamburger-button {
+        float: right;
+        background: none;
+        border: none;
+        font-size: 50px;
+        padding-top: 1px;
+        margin-top: 33px;
+    }
+    @include clear-after;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 60px;
+    margin-top: 100px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
