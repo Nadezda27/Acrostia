@@ -1,5 +1,6 @@
 .about-page {
     background-image: url(../img/about-theme.png);
+    padding-bottom: 112px;
     .top-menu-item {
         &:hover {
             background: #91778e;
@@ -43,11 +44,7 @@
         border-radius: 5px;
         background-color: rgba(77, 63, 75, .5);
         transition: background-color 0.4s;
-        &:hover {
-            background-color: rgba(77, 63, 75, .8);
-        }
         .team-item-logo-link {
-            opacity: 1;
             display: block;
             margin: 0 auto;
             width: 164px;
@@ -56,12 +53,70 @@
             border-radius: 50%;
             background-color: #ffffff;
             margin-bottom: 26px;
+            transition: border 0.4s;
         }
         .team-item-heading-link {
             font-size: 25px;
             font-weight: 900;
             line-height: 58px;
             text-transform: uppercase;
+            color: rgba(255,255,255,.5);
+            transition: color 0.4s;
+        }
+        .team-description {
+            color: #a1ca6c;
+            transition: color 0.4s;
+            margin-bottom: 37px;
+        }
+        .social-link-wrap {
+            font-size: 0;
+            padding-bottom: 33px;
+            .social-link-icon {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: rgba(255,255,255,.5);
+                margin: 0 13px;
+                transition: background-color 0.4s;
+                line-height: 30px;
+                span {
+                    font-size: 15px;
+                    vertical-align: middle;
+                }
+            }
+        }
+        &:hover {
+            background-color: rgba(77, 63, 75, .8);
+            .team-item-logo-link {
+                border: 5px solid #df5c64;
+            }
+            .team-item-heading-link {
+                color: rgba(255,255,255,1);
+            }
+            .team-description {
+                color: #ff8973;
+            }
+            .social-link-wrap .social-link-icon {
+                &.facebook {
+                    background-color: #4f689e;
+                }
+                &.twitter {
+                    background-color: #74c7d5;
+                }
+                &.google {
+                    background-color: #df5c64;
+                }
+                &.linkedin {
+                    background-color: #3e61af;
+                }
+            }
         }
     }
 }
+
+.team-item-photo {
+    margin-top: 7px;
+    margin-left: 1px;
+}
+
